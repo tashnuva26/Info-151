@@ -2,7 +2,7 @@
 Newsletter
 ============= */
 
-#newsletter{
+.newsletter{
 background-color: var(--black);
 color: var(--lightgray);
 }
@@ -26,7 +26,7 @@ section{
 
 }
 
-#card{
+.card{
 padding: 20px;
 display: inline-block;
 }

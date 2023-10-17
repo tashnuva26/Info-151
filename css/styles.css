@@ -406,7 +406,7 @@ textarea {
 /* =============
 Newsletter
 ============= */
-#newsletter {
+.newsletter {
   background-color: var(--black);
   color: var(--lightgray);
 }
@@ -426,7 +426,7 @@ form input {
   margin-left: 15px;
 }
 
-#card {
+.card {
   padding: 20px;
   display: inline-block;
 }

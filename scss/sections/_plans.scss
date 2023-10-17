@@ -1,0 +1,25 @@
+/* =============
+    Plans
+============= */
+section{
+}
+
+#gray-card{
+    padding: 70px 50px;
+    border: 0.5px solid var(--gray);
+    border-radius: 10px;
+
+    // visuals for week 4!
+    display: inline-block;
+    }
+
+#purple-card{
+    padding: 70px 50px;
+    border: 1px solid var(--purple);
+    border-radius: 10px;
+    background-color: var(--purple);
+    color: var(--white);
+    // visuals for week 4!
+    display: inline-block;
+}
+

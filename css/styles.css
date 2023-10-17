@@ -335,6 +335,7 @@ template {
 ============= */
 body {
   background-color: var(--purple);
+  color: var(--white);
 }
 
 /* =============
@@ -358,6 +359,17 @@ ul {
 /* =============
     Buttons
 ============= */
+button {
+  border: none;
+}
+
+.blue-btn {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 15px 30px;
+  border-radius: 5px;
+}
+
 /* =============
     Forms
 ============= */
@@ -384,9 +396,19 @@ textarea {
 /* =============
     Header
 ============= */
+header nav ul li a {
+  color: var(--white);
+}
+header nav ul #home a {
+  color: var(--blue);
+}
+
 /* =============
     Footer
 ============= */
 /* =============
     Hero
 ============= */
+#hero {
+  margin-top: 78px;
+}

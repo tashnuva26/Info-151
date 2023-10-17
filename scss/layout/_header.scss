@@ -1,3 +1,25 @@
 /* =============
     Header
 ============= */
+header{
+    
+    nav{
+        ul{
+            li{
+                a{
+                   color: var(--white);
+                }
+            }
+            #trial{
+                a{
+
+                }
+            }
+            #home{
+                a{
+                    color: var(--blue);
+                 }
+            }
+        }
+    }
+}

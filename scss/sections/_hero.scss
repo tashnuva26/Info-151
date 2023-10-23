@@ -4,15 +4,29 @@
 #hero{
     margin-top: 78px;
 
-    h1{
-        font-size: rem-calc(62);
-    }
+    div{
+        h1{
+            font-size: rem-calc(62);
+        }
 
+        #hero-title-container-top{
+        }
+
+        #hero-title-container{
+            display: flex;
+         }
+        
+         #hero-title-container-bottom{
+         }
+    }
     p{
         font-size: rem-calc(18);
+        margin-top: 25px;
     }
 
     ul{
         font-size: rem-calc(20);
+        margin-top: 25px;
     }
+
 }

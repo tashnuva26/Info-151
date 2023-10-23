@@ -1,3 +1,37 @@
 /* =============
     Navigation
 ============= */
+
+a{
+    text-decoration: none;
+}
+
+nav{
+    ul{
+        display: flex;
+        justify-content: flex-end;
+        li{
+            list-style: none;
+            margin-left: 29px;
+            a:link, a:visited{
+                color: var(--white);
+                font-size: rem-calc(18);
+                font-weight: 400;
+                transition: 0.25s;
+            }
+            a:hover, a:active{
+                color: var(--blue);
+            }
+        }
+        #trial{
+            margin-left: auto;
+            a:hover, a:active{
+                color: var(--purple);
+            }
+        }
+        .selected{
+            color: var(--blue);
+        }
+    }
+
+}

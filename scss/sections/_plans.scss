@@ -1,25 +1,62 @@
 /* =============
     Plans
 ============= */
+
+#plans-intro{
+    text-align: center;
+    margin-top: 155px;
+    margin-bottom: 60px;
+
+    h2{
+        font-size: rem-calc(44);
+    }
+    p{
+        font-size: rem-calc(22);
+    }
+}
+
 section{
+    h2{
+        font-size: rem-calc(44);
+        font-weight: 600px;
+    }
+    h4{
+        font-size: rem-calc(22);
+        font-weight: 400px;
+        color: var(--gray);
+    }
+    p{
+        font-size: rem-calc(16);
+        font-weight: 400px;
+        padding: 10px;
+        color: var(--gray);
+    }
 }
 
 .gray-card{
+    text-align: center;
     padding: 70px 50px;
     border: 0.5px solid var(--gray);
     border-radius: 10px;
-
     // visuals for week 4!
     display: inline-block;
+    border: none;
+    box-shadow: 0px 30px 50px 0px #03032510;
     }
 
 #purple-card{
+    text-align: center;
     padding: 70px 50px;
+    h4{
+        color: var(--white);
+    }
     border: 1px solid var(--purple);
     border-radius: 10px;
     background-color: var(--purple);
     color: var(--white);
     // visuals for week 4!
     display: inline-block;
+    border: none;
+    box-shadow: 0px 30px 50px 0px #03032510;
 }
 

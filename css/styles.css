@@ -342,6 +342,10 @@ body {
 /* =============
     Typography
 ============= */
+body {
+  font-family: "Inter", sans-serif;
+}
+
 h1, h3, h4, h5 {
   margin: 0;
   padding: 0;
@@ -417,18 +421,57 @@ textarea {
 /* =============
     Plans
 ============= */
+#plans-intro {
+  text-align: center;
+  margin-top: 155px;
+  margin-bottom: 60px;
+}
+#plans-intro h2 {
+  font-size: 2.75rem;
+}
+#plans-intro p {
+  font-size: 1.375rem;
+}
+
+section h2 {
+  font-size: 2.75rem;
+  font-weight: 600px;
+}
+section h4 {
+  font-size: 1.375rem;
+  font-weight: 400px;
+  color: var(--gray);
+}
+section p {
+  font-size: 1rem;
+  font-weight: 400px;
+  padding: 10px;
+  color: var(--gray);
+}
+
 .gray-card {
+  text-align: center;
   padding: 70px 50px;
   border: 0.5px solid var(--gray);
   border-radius: 10px;
   display: inline-block;
+  border: none;
+  -webkit-box-shadow: 0px 30px 50px 0px rgba(3, 3, 37, 0.062745098);
+          box-shadow: 0px 30px 50px 0px rgba(3, 3, 37, 0.062745098);
 }
 
 #purple-card {
+  text-align: center;
   padding: 70px 50px;
   border: 1px solid var(--purple);
   border-radius: 10px;
   background-color: var(--purple);
   color: var(--white);
   display: inline-block;
+  border: none;
+  -webkit-box-shadow: 0px 30px 50px 0px rgba(3, 3, 37, 0.062745098);
+          box-shadow: 0px 30px 50px 0px rgba(3, 3, 37, 0.062745098);
+}
+#purple-card h4 {
+  color: var(--white);
 }

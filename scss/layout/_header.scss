@@ -2,22 +2,23 @@
     Header
 ============= */
 header{
-    
     nav{
         ul{
             li{
                 a{
                    color: var(--white);
+                   font-size: rem-calc(18);
                 }
             }
             #trial{
                 a{
-
+                    
                 }
             }
             #home{
                 a{
                     color: var(--blue);
+                    font-size: rem-calc(18);
                  }
             }
         }

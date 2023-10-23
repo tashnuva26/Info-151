@@ -3,4 +3,16 @@
 ============= */
 #hero{
     margin-top: 78px;
+
+    h1{
+        font-size: rem-calc(62);
+    }
+
+    p{
+        font-size: rem-calc(18);
+    }
+
+    ul{
+        font-size: rem-calc(20);
+    }
 }

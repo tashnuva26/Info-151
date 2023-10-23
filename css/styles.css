@@ -443,6 +443,15 @@ nav ul .selected {
 /* =============
     Header
 ============= */
+header nav ul li a {
+  color: var(--white);
+  font-size: 1.125rem;
+}
+header nav ul .selected a {
+  color: var(--blue);
+  font-size: 1.125rem;
+}
+
 /* =============
     Footer
 ============= */

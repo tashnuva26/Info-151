@@ -3,4 +3,17 @@
 ============= */
 body{
     background-color: var(--white);
+    main{
+        display: grid;
+        grid-template-columns: auto 1140px auto;
+        grid-template-areas:". main-grid-item .";
+        #main-grid-item{
+            grid-area: main-grid-item;
+        }
+    }
+}
+
+#validation-btn{
+    margin-top: 50px;
+    text-align: center;
 }

@@ -337,6 +337,19 @@ body {
   background-color: var(--purple);
   color: var(--white);
 }
+body main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1140px auto;
+  grid-template-columns: auto 1140px auto;
+      grid-template-areas: ". main-grid-item .";
+  padding-top: 40px;
+}
+body main #main-grid-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: main-grid-item;
+}
 
 /* =============
     Typography
@@ -406,6 +419,7 @@ textarea {
 ============= */
 a {
   text-decoration: none;
+  display: inline-block;
 }
 
 nav ul {
@@ -415,6 +429,9 @@ nav ul {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 nav ul li {
   list-style: none;
@@ -433,9 +450,6 @@ nav ul li a:hover, nav ul li a:active {
 nav ul #trial {
   margin-left: auto;
 }
-nav ul #trial a:hover, nav ul #trial a:active {
-  color: var(--purple);
-}
 nav ul .selected {
   color: var(--blue);
 }
@@ -443,6 +457,20 @@ nav ul .selected {
 /* =============
     Header
 ============= */
+header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 30% auto;
+  grid-template-columns: 30% auto;
+}
+header #logo-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 header nav ul li a {
   color: var(--white);
   font-size: 1.125rem;

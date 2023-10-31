@@ -4,5 +4,16 @@
 body{
     background-color: var(--purple);
     color: var(--white);
+
+    main{
+        display: grid;
+        grid-template-columns: auto 1140px auto;
+        grid-template-areas: ". main-grid-item .";
+        padding-top: 40px;
+        #main-grid-item{
+            grid-area: main-grid-item;
+            
+        }
+    }
 }
 

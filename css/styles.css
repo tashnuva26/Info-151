@@ -351,6 +351,10 @@ body main #main-grid-item {
   grid-area: main-grid-item;
 }
 
+#validation-btn {
+  text-align: center;
+}
+
 /* =============
     Typography
 ============= */
@@ -460,8 +464,8 @@ nav ul .selected {
 header {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 30% auto;
-  grid-template-columns: 30% auto;
+  -ms-grid-columns: 38% auto;
+  grid-template-columns: 38% auto;
 }
 header #logo-container {
   display: -webkit-box;
@@ -487,21 +491,32 @@ header nav ul .selected a {
     Hero
 ============= */
 #hero {
-  margin-top: 78px;
+  margin-top: 158px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 60% auto;
+  grid-template-columns: 60% auto;
 }
-#hero div h1 {
+#hero section div h2 {
   font-size: 3.875rem;
 }
-#hero div #hero-title-container {
+#hero section div #hero-title-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
-#hero p {
+#hero section p {
   font-size: 1.125rem;
   margin-top: 25px;
 }
-#hero ul {
+#hero section ul {
   font-size: 1.25rem;
   margin-top: 25px;
+  list-style: none;
+}
+#hero aside img {
+  width: 740px;
+  height: 530px;
+  margin-top: -78px;
+  margin-left: -140px;
 }

@@ -2,31 +2,46 @@
     Hero
 ============= */
 #hero{
-    margin-top: 78px;
+    margin-top: 158px;
+    display: grid;
+    grid-template-columns: 60% auto;
 
-    div{
-        h1{
-            font-size: rem-calc(62);
+    section{
+        div{
+            h2{
+                font-size: rem-calc(62);
+            }
+
+            #hero-title-container-top{
+            }
+
+            #hero-title-container{
+                display: flex;
+            }
+            
+            #hero-title-container-bottom{
+            }
+        }
+        p{
+            font-size: rem-calc(18);
+            margin-top: 25px;
+            
+
         }
 
-        #hero-title-container-top{
+        ul{
+            font-size: rem-calc(20);
+            margin-top: 25px;
+            list-style: none;
         }
-
-        #hero-title-container{
-            display: flex;
-         }
-        
-         #hero-title-container-bottom{
-         }
     }
-    p{
-        font-size: rem-calc(18);
-        margin-top: 25px;
-    }
-
-    ul{
-        font-size: rem-calc(20);
-        margin-top: 25px;
+    aside{
+        img{
+            width: 740px;
+            height: 530px;
+            margin-top: -78px;
+            margin-left: -140px;
+        }
     }
 
 }

@@ -3,74 +3,38 @@ Newsletter
 ============= */
 
 .newsletter{
-background-color: var(--black);
-color: var(--lightgray);
-#copyright{
-    text-align: center;
-    padding-top: 35px;
-    padding-bottom: 35px;
-}
-}
+    background-color: var(--black);
+    color: var(--gray);
+    #copy{
+            text-align: center;
+            padding-bottom: 35px;
+            padding-top: 35px;
 
-#socialMedia{
-    font-size: 20px;
-    list-style: none;
-    display: flex;
-    padding-top: 30px;
-}
 
+    }
+   
+    
+}
 h2{
     color: var(--white);
 }
 
-
 form{ 
-border: 1px solid var(--lightgray);
-display: inline-block;
-border-radius: 5px;
-margin-top: 25px;
+    border: 1px solid var(--gray);
 
-input{
-    border: none;
-    background-color: var(--black);
-    margin-left: 15px;
+    display: inline-block;
+    border-radius: 5px;
+    margin-top: 30px;
+
+    input{
+        border: none;
+        background-color: var(--black);
+        margin-left: 10px;
+       
     }
 }
 
 section{
 
-
 }
 
-.card{
-margin-top: 100px;
-padding: 10px;
-display: inline-block;
-#container1{
-    display: grid;
-    margin-left: 145px;
-    p{
-        padding: 5px;
-        padding-top: 30px;
-    }
-}
-#container2{
-    display: grid;
-    margin-left: 55px;
-}
-#container3{
-    display: grid;
-    margin-left: 55px;
-}
-#container4{
-    display: grid;
-    margin-left: 60px;
-    padding-bottom: 35px;
-}
-a{
-    list-style: none;
-    text-decoration: none;
-    color: var(--lightgray);
-
-}
-}

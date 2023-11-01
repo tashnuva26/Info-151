@@ -20,83 +20,91 @@
 
     
     <link rel="stylesheet" href="css/styles.css">
-    <title>Week 5 - Footer</title>
+    <title>Week 6 - Footer</title>
 </head>
 
 <body>
     <footer>
         <div class="newsletter">
-            <div class="card">
-                <div id="container1">
-                <img src="img/logo.png" alt="logo icon">
-                <p> Lorem ipsum dolor sit amet, consect <br> etur adipiscing elit. Ullamcorper purus
-                <br>eleifend purus faucibus faucibus.</p>
-                    <ul id="socialMedia">
-                        <!-- <li><a href="https://twitter.com/"><img src="img/twitter.png" alt="twitter icon"></a> </li> -->
-                        <li><a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a> </li>
+        <section id="footer-top">
+            <div id="footer-top-grid-item">
+                <div>
+                    <div>
+                    <img src="img/logo.png" alt="logo icon">
+                    <p> Lorem ipsum dolor sit amet, consect <br> etur adipiscing elit. Ullamcorper purus
+                    <br>eleifend purus faucibus faucibus.</p>
+                        <ul id="social-links">
+                            <!-- <li><a href="https://twitter.com/"><img src="img/twitter.png" alt="twitter icon"></a> </li> -->
+                            <li><a href="https://twitter.com/"><i class="fa-brands fa-twitter"></i></a> </li>
 
-                        <!-- <li><a href="https://www.facebook.com/"><img src="img/facebook.png" alt="facebook icon"></a> </li> -->
-                        <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        
-                        <!-- <li><a href="https://www.instagram.com/"><img src="img/instagram.png" alt="instagram icon"></a> </li> -->
-                        <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a> </li>
-                        
-                        <!-- <li><a href="https://www.linkedin.com"><img src="img/linkedIn.png" alt="linkedIn icon"></a> </li> -->
-                        <li><a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a> </li>
-                    </ul>
+                            <!-- <li><a href="https://www.facebook.com/"><img src="img/facebook.png" alt="facebook icon"></a> </li> -->
+                            <li><a href="https://www.facebook.com/"><i class="fa-brands fa-facebook-f"></i></a></li>
+                            
+                            <!-- <li><a href="https://www.instagram.com/"><img src="img/instagram.png" alt="instagram icon"></a> </li> -->
+                            <li><a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a> </li>
+                            
+                            <!-- <li><a href="https://www.linkedin.com"><img src="img/linkedIn.png" alt="linkedIn icon"></a> </li> -->
+                            <li><a href="https://www.linkedin.com"><i class="fa-brands fa-linkedin"></i></a> </li>
+                        </ul>
+                    </div>
+                </div>
+                    <section>
+                        <div>
+                        <h2>Resources</h2>
+                        <ul>
+                            <li><a href="#">Services</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Testimonials</a></li>
+                            <li><a href="#">Blog</a></li>
+                        </ul>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div>
+                        <h2>Useful Links</h2>
+                        <ul>
+                            <li><a href="#">Terms of Services</a></li>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                            <li><a href="#">Contact Us</a></li>
+                        </ul>
+                        </div>
+                    </section>
+
+                    <section>
+                        <div>
+                        <!-- email sign-up form -->
+                        <h2>Newsletter</h2>
+                        <p>Sign up and receive the latest <br> news via email.</p>
+                        <form action="#">
+                            <!-- <label for="fname">Email address:</label> -->
+                            <input type="text" placeholder="Email address" name="email">
+                            <!-- <input type="submit"> -->
+                            <button class="blue-btn">Send</button>
+                        </form>
+                        </div>
+                    </section>
+            </div>
+        </section>
+            
+        <section id="footer-bottom">
+            <div id="footer-bottom-grid-item">
+                <div class="newsletter">
+                    <img src="img/line-gray.png" alt="line" style="display: block; margin: 0 auto;">
+                    <p id="copyright">Copyright 2021 The Codext All Rights Reserved.</p>
                 </div>
             </div>
-
-            <section class="card">
-                <div id="container2">
-                <h2>Resources</h2>
-                <ul>
-                    <li><a href="#">Services</a></li>
-                    <li><a href="#">Pricing</a></li>
-                    <li><a href="#">Testimonials</a></li>
-                    <li><a href="#">Blog</a></li>
-                </ul>
-                </div>
-            </section>
-
-            <section class="card">
-                <div id="container3">
-                <h2>Useful Links</h2>
-                <ul>
-                    <li><a href="#">Terms of Services</a></li>
-                    <li><a href="#">Privacy Policy</a></li>
-                    <li><a href="#">Cookie Policy</a></li>
-                    <li><a href="#">Cookie Policy</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
-                </div>
-            </section>
-
-            <section class="card">
-                <div id="container4">
-                <!-- email sign-up form -->
-                <h2>Newsletter</h2>
-                <p>Sign up and receive the latest <br> news via email.</p>
-                <form action="#">
-                    <!-- <label for="fname">Email address:</label> -->
-                    <input type="text" placeholder="Email address" name="email">
-                    <!-- <input type="submit"> -->
-                    <button class="blue-btn">Send</button>
-                </form>
-                </div>
-            </section>
-
-        
-        <div class="newsletter">
-            <img src="img/line-gray.png" alt="line" style="display: block; margin: 0 auto;">
-            <p id="copyright">Copyright 2021 The Codext All Rights Reserved.</p>
-        </div>
+        </section>
         </div>
     </footer>
-            
+     
+    <div id="validation-btn">
     <a href=" https://validator.w3.org/nu/?doc=https://week-5-footer--info-151-tashnuva.netlify.app/" target="_blank">
         <img src="img/html-logo.svg" alt="Valid HTML 5">
         </a>
+    </div>
             
     <script src="js/scripts-dist.js"></script>
 </body>

@@ -336,6 +336,19 @@ template {
 /* =============
     Base
 ============= */
+#validation-btn {
+  margin-top: 60px;
+  text-align: center;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+ul li {
+  list-style: none;
+}
+
 /* =============
     Typography
 ============= */
@@ -351,6 +364,8 @@ h1, h3, h4, h5 {
 h2 {
   margin-top: 0px;
   margin-bottom: 30px;
+  font-size: 1.375rem;
+  font-weight: 500;
 }
 
 p {
@@ -405,32 +420,111 @@ textarea {
 /* =============
     Navigation
 ============= */
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
 /* =============
     Header
 ============= */
 /* =============
     Footer
 ============= */
+footer {
+  color: var(--white);
+}
+footer #footer-top {
+  background-color: var(--black);
+  padding: 80px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1140px auto;
+  grid-template-columns: auto 1140px auto;
+      grid-template-areas: ". top-grid-item .";
+}
+footer #footer-top p {
+  margin-top: 30px;
+  line-height: 1.5;
+}
+footer #footer-top #footer-top-grid-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: top-grid-item;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 40% 20% 20% auto;
+  grid-template-columns: 40% 20% 20% auto;
+}
+footer #footer-top #footer-top-grid-item section a:link, footer #footer-top #footer-top-grid-item section a:visited {
+  color: var(--lightgray);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  margin-bottom: 10px;
+}
+footer #footer-top #footer-top-grid-item section a:hover, footer #footer-top #footer-top-grid-item section a:active {
+  color: var(--blue);
+}
+
+#footer-bottom {
+  background-color: var(--black);
+  padding: 70px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1140px auto;
+  grid-template-columns: auto 1140px auto;
+      grid-template-areas: ". grid-item .";
+}
+#footer-bottom #footer-bottom-grid-item {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: grid-item;
+}
+
+#social-links {
+  margin-top: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#social-links li {
+  margin-right: 16px;
+}
+#social-links li a:link, #social-links li a:visited {
+  height: 40px;
+  width: 40px;
+  border: 1px solid var(--lightgray);
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  color: var(--lightgray);
+}
+#social-links li a:hover, #social-links li a:active {
+  background-color: var(--blue);
+  color: var(--white);
+  border: 1px solid var(--blue);
+}
+
 /* =============
 Newsletter
 ============= */
 .newsletter {
   background-color: var(--black);
-  color: var(--lightgray);
+  color: var(--gray);
 }
-.newsletter #copyright {
+.newsletter #copy {
   text-align: center;
-  padding-top: 35px;
   padding-bottom: 35px;
-}
-
-#socialMedia {
-  font-size: 20px;
-  list-style: none;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 30px;
+  padding-top: 35px;
 }
 
 h2 {
@@ -438,49 +532,13 @@ h2 {
 }
 
 form {
-  border: 1px solid var(--lightgray);
+  border: 1px solid var(--gray);
   display: inline-block;
   border-radius: 5px;
-  margin-top: 25px;
+  margin-top: 30px;
 }
 form input {
   border: none;
   background-color: var(--black);
-  margin-left: 15px;
-}
-
-.card {
-  margin-top: 100px;
-  padding: 10px;
-  display: inline-block;
-}
-.card #container1 {
-  display: -ms-grid;
-  display: grid;
-  margin-left: 145px;
-}
-.card #container1 p {
-  padding: 5px;
-  padding-top: 30px;
-}
-.card #container2 {
-  display: -ms-grid;
-  display: grid;
-  margin-left: 55px;
-}
-.card #container3 {
-  display: -ms-grid;
-  display: grid;
-  margin-left: 55px;
-}
-.card #container4 {
-  display: -ms-grid;
-  display: grid;
-  margin-left: 60px;
-  padding-bottom: 35px;
-}
-.card a {
-  list-style: none;
-  text-decoration: none;
-  color: var(--lightgray);
+  margin-left: 10px;
 }

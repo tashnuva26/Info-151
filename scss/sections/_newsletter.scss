@@ -4,8 +4,8 @@ Newsletter
 
 .newsletter{
     background-color: var(--black);
-    color: var(--gray);
-    #copy{
+    color: var(--lightgray);
+    #copyright{
             text-align: center;
             padding-bottom: 35px;
             padding-top: 35px;
@@ -21,8 +21,7 @@ h2{
 
 form{ 
     border: 1px solid var(--gray);
-
-    display: inline-block;
+    display: flex;
     border-radius: 5px;
     margin-top: 30px;
 

@@ -395,6 +395,14 @@ button {
   padding: 15px 30px;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.blue-btn:hover {
+  background-color: var(--gray);
+  color: var(--white);
 }
 
 /* =============
@@ -519,9 +527,9 @@ Newsletter
 ============= */
 .newsletter {
   background-color: var(--black);
-  color: var(--gray);
+  color: var(--lightgray);
 }
-.newsletter #copy {
+.newsletter #copyright {
   text-align: center;
   padding-bottom: 35px;
   padding-top: 35px;
@@ -533,7 +541,9 @@ h2 {
 
 form {
   border: 1px solid var(--gray);
-  display: inline-block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   border-radius: 5px;
   margin-top: 30px;
 }

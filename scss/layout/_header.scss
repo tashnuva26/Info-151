@@ -3,26 +3,41 @@
 ============= */
 
 header{
-    padding: 23px 36px;
+    padding: 23px 36px 0px;
     display: grid;
     grid-template-columns: 50% auto 0%;
     grid-template-areas: 
     "logo burger"
     "nav nav";
 
-    #logo-container{
-        align-items: center;
-        grid-area: logo;
+    @include md{
+        grid-template-columns: 50% auto 0%;
     }
 
-    #burger-container{
+    @include xl{
+        grid-template-columns: 25% auto auto;
+        grid-template-areas:  
+        "logo nav";
+    }
+       
+
+    #logo-container{ 
+        align-items: center;
+        grid-area: logo;
+    } 
+
+    #burger-container{  
         display: flex;
         justify-content: flex-end;
         align-items: center;
         grid-area: burger;
-    }
 
-    nav{
+        @include xl{
+            display: none;
+        }
+    } 
+
+    nav{ 
         grid-area: nav;
-    }
-}
+    } 
+} 

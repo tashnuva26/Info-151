@@ -1,3 +1,28 @@
 /* =============
     Header
 ============= */
+
+header{
+    padding: 23px 36px;
+    display: grid;
+    grid-template-columns: 50% auto 0%;
+    grid-template-areas: 
+    "logo burger"
+    "nav nav";
+
+    #logo-container{
+        align-items: center;
+        grid-area: logo;
+    }
+
+    #burger-container{
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        grid-area: burger;
+    }
+
+    nav{
+        grid-area: nav;
+    }
+}

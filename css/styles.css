@@ -352,6 +352,7 @@ ul li {
 ============= */
 body {
   font-family: "Inter", sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 h1.h2.h3 {
@@ -434,7 +435,7 @@ nav ul li .signIn-btn {
   color: var(--white);
   border-radius: 8px;
   padding: 16px;
-  font-weight: 400;
+  font-size: 18px;
   border: 1px solid var(--blue);
   -webkit-transition: 0.25s;
   transition: 0.25s;
@@ -452,7 +453,7 @@ nav ul li .signUp-btn {
   border-radius: 8px;
   border: 1px solid var(--blue);
   padding: 16px;
-  font-weight: 400;
+  font-size: 18px;
   -webkit-transition: 0.25s;
   transition: 0.25s;
   cursor: pointer;

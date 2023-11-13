@@ -13,6 +13,9 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
+  --gray: #74768F;
+  --lightgray: #8f8f8f;
+  --blue: #024A58;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -331,6 +334,11 @@ template {
 /* =============
     Base
 ============= */
+#validation-btn {
+  text-align: center;
+  margin-top: 10px;
+}
+
 /* =============
     Typography
 ============= */
@@ -360,9 +368,124 @@ textarea {
 /* =============
     Navigation
 ============= */
+a {
+  text-decoration: none;
+}
+
+nav {
+  margin-top: 23px;
+  padding-top: 20px;
+}
+nav ul {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 630px;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a:link, nav ul li a:visited {
+  padding: 28px;
+  display: inline-block;
+  margin-bottom: 12px;
+  color: var(--gray);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+}
+nav ul li a:hover, nav ul li a:active {
+  color: var(--black);
+}
+nav ul li .btn-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 28px;
+}
+nav ul li .signIn-btn {
+  display: inline-block;
+  background-color: var(--blue);
+  color: var(--white);
+  border-radius: 8px;
+  padding: 16px;
+  font-size: 18px;
+  border: 1px solid var(--blue);
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  cursor: pointer;
+  margin-right: 16px;
+}
+nav ul li .signIn-btn:hover {
+  background-color: var(--lightgray);
+  color: var(--blue);
+}
+nav ul li .signUp-btn {
+  display: inline-block;
+  background-color: var(--white);
+  color: var(--blue);
+  border-radius: 8px;
+  border: 1px solid var(--blue);
+  padding: 16px;
+  font-size: 18px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  cursor: pointer;
+}
+nav ul li .signUp-btn:hover {
+  background-color: var(--blue);
+  color: var(--lightgray);
+}
+
 /* =============
     Header
 ============= */
+header {
+  padding: 23px 36px;
+  margin-bottom: -200px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 50% auto 0%;
+  grid-template-columns: 50% auto 0%;
+      grid-template-areas: "logo link" "nav nav";
+}
+header #logo-container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-area: logo;
+}
+header #link-container {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  grid-area: link;
+  position: relative;
+  top: -145px;
+}
+header nav {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-area: nav;
+}
+
 /* =============
     Footer
 ============= */

@@ -2,8 +2,15 @@
     Navigation
 ============= */
 .showMainNav{
-    display: block !important;
+    display: flex !important;
 }
+
+.showSignIn{
+    display: flex !important;
+    justify-content: flex-end;
+
+}
+
 
 a{
     text-decoration: none;

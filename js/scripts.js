@@ -1,8 +1,14 @@
-// alert("Hello Class!");
+/* =============
+    Navigation
+============= */
 
 var mainNav = document.querySelector("#mainNav");
-
+var signInUpContainer = document.querySelector("#btn-container");
 var burgerBtn = document.querySelector("#burger-container button");
+
+var burgerBars = document.querySelector("#burger-bars");
+var burgerX = document.querySelector("#burger-x");
+
 console.log(burgerBtn);
 
 var canYouSeeMainNav = false;
@@ -15,11 +21,27 @@ function showNav(){
     if(canYouSeeMainNav === false){
         console.log("show menu");
         mainNav.classList.add("showMainNav");
+        signInUpContainer.classList.add("showSignIn");
         canYouSeeMainNav = true;
+
+        //hide burger bars 
+        burgerBars.classList.add("hide-burger-bars");
+
+        //show burger x
+        burgerX.classList.remove("hide-burger-x");
+
+
     }else{
         console.log("hide menu");
         mainNav.classList.remove("showMainNav");
+        signInUpContainer.classList.remove("showSignIn");
         canYouSeeMainNav = false;
+
+        //show burger bars 
+        burgerBars.classList.remove("hide-burger-bars");
+
+        //hide burger x
+        burgerX.classList.add("hide-burger-x");
     }
     
 }
@@ -27,4 +49,31 @@ function showNav(){
 burgerBtn.addEventListener("click", showNav);
 
 
-// showNav();
+/* =============
+    Sign In
+============= */
+
+var signInBtn = document.querySelector("#sign-in-button");
+var signInContainer =  document.querySelector("#sign-in-container");
+var closeSignUpModalBtn= document.querySelector("#close-sign-up-modal-btn");
+
+
+function showSignInModal(){
+    // console.log("show modal now");
+    signInContainer.classList.add("show-signIn-container");
+    mainNav.classList.remove("showMainNav");
+    signInUpContainer.classList.remove("showSignIn");
+
+
+}
+
+function hideSignInModal(){
+    // console.log("close now");
+    signInContainer.classList.remove("show-signIn-container");
+
+
+}
+
+signInBtn.addEventListener("click", showSignInModal);
+closeSignUpModalBtn.addEventListener("click", hideSignInModal);
+signInContainer.addEventListener("click", hideSignInModal);

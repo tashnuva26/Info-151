@@ -1,6 +1,19 @@
 /* =============
     Base
 ============= */
+
+.show-signIn-container{
+    display: flex !important;
+}
+
+.hide-burger-x{
+    display: none;
+}
+
+.hide-burger-bars{
+    display: none;
+}
+
 ul{
     padding: 0;
     margin: 0;

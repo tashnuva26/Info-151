@@ -16,31 +16,45 @@
 
 <body>
 
+    <section id="sign-in-container">
+        <form action="#">
+            <div id="close-button-container">
+                <button class="close-btn" id="close-sign-up-modal-btn"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <input type="text" placeholder="User Name">
+            <input type="text" placeholder="Password">
+            <div id="sign-in-button-container">
+                <button class="signUp-btn">Sign In</button>
+            </div>  
+        </form>
+    </section>
+
     <header>
-    <div id="logo-container">
-        <img src="img/logo.svg" alt="logo for website">
-    </div>
-    <div id="burger-container">
-        <button>
-            <i class="fa-solid fa-bars" style="color: #000000;"></i>
-        </button>
-    </div>
-    <nav id="mainNav">
-        <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Impact</a></li>
-            <li><a href="#">Locations</a></li>
-            <li>
-                <div class="btn-container">
-                    <button class="signIn-btn">Sign In</button>
-                    <button class="signUp-btn">Sign Up</button>
-                </div>
-            </li>
-          
-        </ul>
-    </nav>
-</header>
+        <div id="logo-container">
+            <img src="img/logo.svg" alt="logo for website">
+        </div>
+        <div id="burger-container">
+            <button>
+                <i class="fa-solid fa-bars" id="burger-bars" style="color: #000000;"></i>
+                <i class="fa-solid fa-xmark hide-burger-x" id="burger-x"></i>
+            </button>
+        </div>
+        <nav id="mainNav">
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Impact</a></li>
+                <li><a href="#">Locations</a></li>
+                <li>
+                    <div id="btn-container">
+                        <button class="signIn-btn" id="sign-in-button">Sign In</button>
+                        <button class="signUp-btn">Sign Up</button>
+                    </div>
+                </li>
+            
+            </ul>
+        </nav>
+    </header>
 
 <div id="hero">
 </div>

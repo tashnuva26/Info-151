@@ -342,6 +342,12 @@ template {
   display: flex !important;
 }
 
+.show-signUp-container {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+}
+
 .hide-burger-x {
   display: none;
 }
@@ -475,6 +481,15 @@ textarea {
 }
 
 .showSignIn {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.showSignUp {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -728,6 +743,65 @@ header nav {
           justify-content: flex-end;
 }
 #sign-in-container #sign-in-button-container button {
+  background-color: var(--blueLight);
+  color: var(--white);
+  border: 1px solid var(--white);
+}
+
+/* =============
+    Sign Up
+============= */
+#sign-up-container {
+  background-color: rgba(2, 74, 88, 0.7019607843);
+  height: 100vh;
+  padding: 16px;
+  position: fixed;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+#sign-up-container form {
+  background-color: rgba(2, 74, 88, 0.8);
+  padding: 24px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 8px;
+}
+#sign-up-container form #cancel-button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-bottom: 24px;
+}
+#sign-up-container form input {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 30px;
+  margin-bottom: 24px;
+  border: none;
+  border-radius: 8px;
+}
+#sign-up-container #send-button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+#sign-up-container #send-button-container button {
   background-color: var(--blueLight);
   color: var(--white);
   border: 1px solid var(--white);

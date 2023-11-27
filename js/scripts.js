@@ -70,10 +70,35 @@ function showSignInModal(){
 function hideSignInModal(){
     // console.log("close now");
     signInContainer.classList.remove("show-signIn-container");
-
-
 }
 
 signInBtn.addEventListener("click", showSignInModal);
 closeSignUpModalBtn.addEventListener("click", hideSignInModal);
-signInContainer.addEventListener("click", hideSignInModal);
+// signInContainer.addEventListener("click", hideSignInModal);
+
+/* =============
+    Sign Up
+============= */
+
+var signUpBtn = document.querySelector("#sign-up-button");
+var signUpContainer =  document.querySelector("#sign-up-container");
+var cancelSignUpModalBtn= document.querySelector("#cancel-sign-up-modal-btn");
+
+
+function showSignUpModal(){
+    // console.log("show modal now");
+    signUpContainer.classList.add("show-signUp-container");
+    mainNav.classList.remove("showMainNav");
+    signInUpContainer.classList.remove("showSignUp");
+
+}
+
+function hideSignUpModal(){
+    // console.log("close now");
+    signUpContainer.classList.remove("show-signUp-container");
+
+}
+
+signUpBtn.addEventListener("click", showSignUpModal);
+cancelSignUpModalBtn.addEventListener("click", hideSignUpModal);
+// signUpContainer.addEventListener("click", hideSignUpModal);

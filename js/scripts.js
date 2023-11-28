@@ -10,6 +10,8 @@ new Carousel(container, options);
 //Animate on Scroll
 AOS.init();
 
+
+// Multiple.js- Gradient Library
 var element = document.querySelector('.item');
 
 element.style.height = '1000px'; 

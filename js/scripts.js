@@ -1,3 +1,25 @@
+Fancybox.bind()
+
+//const container = document.getElementById("myCarousel");
+const container = document.querySelector("#myCarousel");
+
+const options = { infinite: true };
+
+new Carousel(container, options);
+
+//Animate on Scroll
+AOS.init();
+
+var element = document.querySelector('.item');
+
+element.style.height = '1000px'; 
+
+element.style.transition = 'height 0.3s ease';
+var multiple = new Multiple({
+    selector: '.item',
+    background: 'linear-gradient(#F3FAFE, #031B54)'
+});
+
 /* =============
     Navigation
 ============= */
@@ -5,7 +27,6 @@
 var mainNav = document.querySelector("#mainNav");
 var signInUpContainer = document.querySelector("#btn-container");
 var burgerBtn = document.querySelector("#burger-container button");
-
 var burgerBars = document.querySelector("#burger-bars");
 var burgerX = document.querySelector("#burger-x");
 
